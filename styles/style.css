@@ -147,6 +147,18 @@ main{
 }
 
 
+.facts-title{
+    color: #131313;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.facts-description{
+    color: #727272;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
 /* media query styles */
 
  @media screen and (max-width: 576px) {
