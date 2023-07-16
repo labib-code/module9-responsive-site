@@ -167,14 +167,14 @@ main {
     padding: 30px;
 }
 
-.facts-card-container{
+.facts-card-container {
     display: flex;
     justify-content: space-around;
 
 
 }
 
-.card-stats{
+.card-stats {
     color: #424242;
     font-size: 2rem;
     font-weight: 600;
@@ -183,20 +183,20 @@ main {
 
 }
 
-.card-title{
+.card-title {
     color: #727272;
     font-size: 1rem;
     font-weight: 600;
     margin-top: 5px;
 }
 
-.sponsors{
+.sponsors {
     text-align: center;
 }
 
 
 
-.sponsors-img-container{
+.sponsors-img-container {
     display: flex;
     justify-content: space-evenly;
     margin-top: 50px;
@@ -205,10 +205,62 @@ main {
 
 }
 
-.sponsors-img-container img{
+.sponsors-img-container img {
     width: 165px;
 }
 
+
+
+.features {
+    display: flex;
+    margin-top: 130px;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+
+
+.feature-content .feature-card {
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+
+.features .facts-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.ten-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 240px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+    
+}
+
+.ten-badge h2{
+    font-size: 3rem;
+    margin: 0;
+}
+
+.ten-badge p{
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+
+.feature-image img{
+    height: 100%;
+    margin-left: 90px ;
+}
 
 /* media query styles */
 
@@ -218,22 +270,31 @@ main {
     }
 
     nav,
+    .features,
     .teams-container,
     .facts-card-container,
     .sponsors-img-container {
         flex-direction: column;
     }
 
+    .feature-image img{
+        width: 100%;
+        margin-left: 0;
+    }
     .teams-img-container {
         grid-template-columns: 1fr;
     }
 
-    .teams-content, .facts-card-container {
+    .ten-badge{
+        position: static;
+    }
+    .teams-content,
+    .facts-card-container {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .facts-card-container{
+    .facts-card-container {
         gap: 20px;
     }
 }
@@ -243,6 +304,7 @@ main {
 
     nav,
     .teams-container,
+    .features,
     .sponsors-img-container {
         flex-direction: column;
     }
